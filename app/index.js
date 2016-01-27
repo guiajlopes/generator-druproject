@@ -13,10 +13,28 @@ DruProjectGenerator.prototype.askForBase = function () {
   this.log(yosay('Welcome to DruProjectGenerator'));
 
   this.log(
-    chalk.red(
+    chalk.yellow(
       'With this you can create the scaffolding for your own Drupal Project.' + '\n'
     )
   );
+
+  var prompts = [
+    {
+      type: 'string',
+      name: 'projectName',
+      message: 'What\'s your project\'s name?' + chalk.red(' (Required)'),
+      validate: function (input) {
+        if (input === '') {
+          return 'Please enter your project\'s name';
+        }
+        return true;
+      }
+    }
+  ]
+
+  this.prompt(prompts, function (props) {
+
+  });
 };
 
 module.exports = DruProjectGenerator;
