@@ -1,0 +1,76 @@
+# Sensitive information #
+#########################
+docroot/sites/*/settings*.php
+dumps/*
+old
+
+# User Generated Content #
+##########################
+docroot/files
+docroot/sites/*/files
+docroot/sites/*/private
+docroot/cache/*
+docroot/tmp
+shared_files
+files
+*.sass-cache*
+
+# Vagrant Files #
+#################
+.vagrant
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages #
+############
+# It's better to unpack these files and commit the raw source, git has its own
+# built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon\?
+Thumbs.db
+
+# Code editor temporary files #
+###############################
+*.swp
+.idea
+target
+tmp
+bin
+.classpath
+.project
+.settings
+out
+*.ipr
+*.iws
+*.iml
+.springBeans
+*.swp
+.pmd
+.allow-devtools-edit
+Guardfile
+.orig
