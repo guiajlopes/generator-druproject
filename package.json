@@ -1,6 +1,6 @@
 {
   "name": "generator-druproject",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This generate a new Drupal Project with Teka Theme and Jenkins Scripts to Deploy your code.",
   "files": [
     "app"
