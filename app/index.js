@@ -134,10 +134,10 @@ DruProjectGenerator.prototype.generateProject = function () {
       mkdirp('docroot');
       try {
         var stats = fs.lstatSync(_self._sourceRoot + '/' + file_name);
-        _self.destinationRoot(_self.projectPath);
         ncp(_self._sourceRoot + '/' + file_name, _self.projectPath + '/docroot');
       }
       catch (e) {
+        console.log('teste');
         child_process.exec('tar xfz ' + _self._sourceRoot + '/drupal.tar.gz -C ' + _self._sourceRoot, function() {
           ncp(_self._sourceRoot + '/' + file_name, _self.projectPath + '/docroot');
         });
